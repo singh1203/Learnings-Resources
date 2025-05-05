@@ -9,15 +9,15 @@
 using namespace std;
 
 int main() {
-	const int = 9;
+	const int i = 9;
 	// i = 6; Error as read only variable hence no reassignment 
 	
  	const int *p1 = &i; // data is const but data is not
 	p1++; 		    // will compile successfully
 	
-	int* const p2; 	    // pointer is const, data is not
+	int* const p2 = nullptr; 	    // pointer is const, data is not
 	
-	const int* const p3; // Both data and pointer is const
+	const int* const p3 = nullptr; // Both data and pointer is const
 	
 	int const *p4 = &i;  // Both the assignment means data is const 
 	const int *p4 = &i;  // and can be done either way
